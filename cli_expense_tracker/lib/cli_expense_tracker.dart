@@ -29,7 +29,8 @@ class Expense {
 // ======================
 
 class FoodExpense extends Expense {
-  FoodExpense(String title, double amount) : super(title, amount, "Food");
+  FoodExpense(String title, double amount)
+      : super(title, amount, "Food");
 
   @override
   void display() {
@@ -39,7 +40,7 @@ class FoodExpense extends Expense {
 
 class TransportExpense extends Expense {
   TransportExpense(String title, double amount)
-    : super(title, amount, "Transport");
+      : super(title, amount, "Transport");
 
   @override
   void display() {
@@ -49,7 +50,7 @@ class TransportExpense extends Expense {
 
 class EntertainmentExpense extends Expense {
   EntertainmentExpense(String title, double amount)
-    : super(title, amount, "Entertainment");
+      : super(title, amount, "Entertainment");
 
   @override
   void display() {
@@ -153,7 +154,7 @@ void viewExpenses(List<Expense> expenses) {
   print("\n===== All Expenses =====\n");
 
   for (int i = 0; i < expenses.length; i++) {
-    print("${i + 1}. ");
+    print("${i + 1}. ",);
     expenses[i].display();
   }
 }
